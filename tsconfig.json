@@ -1,27 +1,38 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "outDir": "./build/",
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "module": "esNext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "noImplicitAny": false
+    "target": "es5",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "allowJs": false,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "es6",
+      "dom",
+      "es2017",
+      "es2018.promise",
+      "esnext"
+    ]
   },
   "include": [
-    "src"
+    "./src/**/*",
+    "./typings/index.d.ts",
+    "node_modules/exscudo-ui/src/**/*"
+  ],
+  "exclude": [
+    "./src/**/__tests__/*",
+    "node_modules/exscudo-ui/src/**/__tests__/*"
   ]
 }

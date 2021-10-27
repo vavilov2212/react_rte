@@ -1,5 +1,5 @@
 import * as React from 'react';
-import SlateRteUI from '../../components/SlateRte/SlateRteUI';
+import SlateRteUI from '../../components/SlateRteUI/SlateRteUI';
 
 const SlateRte = props => {
 
